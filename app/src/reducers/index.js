@@ -2,12 +2,12 @@ import { FETCH_NAME } from '../actions';
 
 const initialState = {
     "item": {
-      "id": "place-holder",
+      "id": "",
       "name": "Loading...",
-      "symbol": "PLH",
-      "market_cap_rank": 420,
-      "thumb": "https://assets.coingecko.com/coins/images/13232/thumb/kira_logo.jpg?1606570162",
-      "large": "https://assets.coingecko.com/coins/images/13232/large/kira_logo.jpg?1606570162",
+      "symbol": "",
+      "market_cap_rank": null,
+      "thumb": "",
+      "large": "",
       "score": 0
     }
   }
