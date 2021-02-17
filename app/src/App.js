@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Trending Coin</h1>
+      <h1>Trending Coins</h1>
       <Coins />
     </div>
   );

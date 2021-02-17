@@ -3,20 +3,27 @@ import { connect } from "react-redux";
 import { getData } from '../actions';
 
 const Coins = (props) => {
-    console.log("Coins props:", props.item)
+    console.log("Coins props:", props.item.length)
 
     useEffect(() => {
         props.getData();
     }, [])
     
     return(
-        <div className="coin">
-            <img src={props.item.large} alt="Coin Symbol"></img>
-            <div>
-            <h2>{props.item.name}</h2>
-            <h2>{props.item.symbol}</h2>
-            </div>
-        </div>
+        <>
+        {props.item.length > 1 && props.item.map(res => {
+            console.log("ITEM: ", res.item)
+            return(
+                <div className="coin">
+                    <img src={res.item.large} alt="Coin Symbol" style={{height:"4vw", width:"4vw"}}></img>
+                    <div>
+                    <h2>{res.item.name}</h2>
+                    <h2>{res.item.symbol}</h2>
+                    </div>
+                </div>
+            )
+        })}
+        </>
     )
 }
 
