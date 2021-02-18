@@ -8,8 +8,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Trending Coins</h1>
+      <header>
+        <h1>Trending Coins</h1>
+      </header>
       <Coins />
+      <footer>
+        Powered by &copy;Coingecko API
+      </footer>
     </div>
   );
 }

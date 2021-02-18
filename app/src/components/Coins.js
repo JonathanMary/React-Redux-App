@@ -16,9 +16,10 @@ const Coins = (props) => {
             return(
                 <div className="coin">
                     <img src={res.item.large} alt="Coin Symbol" style={{height:"4vw", width:"4vw"}}></img>
-                    <div>
-                    <h2>{res.item.name}</h2>
-                    <h2>{res.item.symbol}</h2>
+                    <div className="coin-info">
+                        <h2>{res.item.name}</h2>
+                        <div>---</div>
+                        <h2>{res.item.symbol}</h2>
                     </div>
                 </div>
             )
